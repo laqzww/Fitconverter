@@ -1,0 +1,83 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1f2933;
+  background-color: #f4f6fb;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-shell {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 320px;
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 4px 0 12px rgba(15, 23, 42, 0.08);
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.sidebar section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar button,
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.sidebar button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.map-container {
+  flex: 1;
+  position: relative;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.results li strong {
+  display: block;
+}
